@@ -197,18 +197,27 @@ footer a img {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: all;
   transition-duration: 200ms;
 }
 
-.list-btn:hover .delete-btn {
+.edit-btn {
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 1;
   pointer-events: all;
+  transition-duration: 200ms;
 }
 
-.list-btn:hover .delete-btn:hover {
+.list-btn .delete-btn:hover {
   color: #ff4e7a;
+}
+
+.list-btn .edit-btn:hover {
+  color: var(--color-link);
 }
 
 .notes-container,
@@ -271,6 +280,18 @@ article>div {
 
   .hidden-nav {
     display: flex !important;
+  }
+
+  .delete-btn,
+  .edit-btn {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .list-btn:hover .delete-btn,
+  .list-btn:hover .edit-btn {
+    opacity: 1;
+    pointer-events: all;
   }
 
   .menu {

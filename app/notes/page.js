@@ -76,6 +76,7 @@ export default function NotesPage() {
                 setNote({ ...note, id: newId })
                 router.push(`?id=${newId}`)
             }
+            setShowNav(true)
         } catch (err) {
             console.log(err.message)
         } finally {
