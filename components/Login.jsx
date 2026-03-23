@@ -46,9 +46,8 @@ export default function Login() {
     return (
         <>
             <div className="login-container">
-                <h1 className="text-gradient">NOTES APP</h1>
+                <h1 className="text-gradient">NOTE KEEPING</h1>
                 <h2>Organized note taking made easy</h2>
-                <p>Build your very own archinve of easily navigated and indexed information and notes.</p>
                 <div className="full-line"></div>
                 <h6>{isRegister ? 'Create an account' : 'Log in'}</h6>
                 {error && <p style={{ color: 'coral', fontSize: '0.8rem', textAlign: 'center' }}>{error}</p>}
