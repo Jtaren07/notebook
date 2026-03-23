@@ -6,7 +6,7 @@ export default function Editor(props) {
     return (
         <section className="notes-container">
             <TopNav {...props} />
-            <textarea value={text} onChange={setText} placeholder="The mitochondria is the powerhouse of the cell" />
+            <textarea value={text} onChange={setText} placeholder="Write your note here..." />
         </section>
     )
 }

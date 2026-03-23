@@ -41,6 +41,7 @@ export default function NotesPage() {
             content: ''
         })
         setIsViewer(false)
+        setShowNav(false)
         router.replace('/notes')
     }
 

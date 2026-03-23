@@ -64,7 +64,7 @@ export default function SideNav(props) {
                                 setShowNav(false)
                                 router.push('/notes?id=' + note)
                             }} key={idx} className="card-button-secondary list-btn">
-                                <p>{n}</p>
+                                <p>{n.length > 10 ? n.slice(0, 10) + '...' : n}</p>
                                 <small>{date.split(' ').slice(1, 4).join(' ')}</small>
                                 <div onClick={(e) => {
                                     e.stopPropagation()
